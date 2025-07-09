@@ -1,31 +1,45 @@
-# Evita subir o node_modules (pesado e desnecessário)
+﻿# === DEPENDÃŠNCIAS E COMPILAÃ‡Ã•ES ===
 node_modules/
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+dist/
+build/
+.cache/
 
-# Nunca envie seu arquivo de variáveis sensíveis
-.env
-
-# Logs
-logs/
+# === CONFIGURAÃ‡Ã•ES E LOGS ===
+.vscode/
+.idea/
 *.log
+logs/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# Caches
-.cache/
-dist/
-
-# VS Code configs
-.vscode/
-
-# Mac e Windows
-.DS_Store
-Thumbs.db
-
-.env*
+# === VARIÃVEIS DE AMBIENTE E SENSÃVEIS ===
+.env
+.env.*
 *.key
 *.pem
 *.crt
 *.cert
-*.json
+*.p12
 *.sqlite
+*.db
+*.json
+
+# === ARQUIVOS DE SISTEMA ===
+.DS_Store
+Thumbs.db
+
+# === TESTES E COBERTURA ===
+coverage/
+*.test.js
+*.spec.js
+jest.config.js
+
+# === OUTROS ===
+tmp/
+*.bak
+*.swp
+*.swo
